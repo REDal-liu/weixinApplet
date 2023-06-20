@@ -1,0 +1,1 @@
+"/Applications/微信开发者工具 2.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-5goosbltd61108d5 --n quickstartFunctions --r --project "/Users/user/personal_data/weixin/myApp" --report_first --report

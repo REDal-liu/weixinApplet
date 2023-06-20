@@ -1,0 +1,37 @@
+<block wx:if="{{!userInfo}}">
+  <!-- 登录区域 -->
+  <view class="login-container">
+    <!-- <image src="/images/contact-filled.png" class="contact-filled" mode="widthFix"></image> -->
+    <button class="btn-login" bindtap="login">一键登录</button>
+    <text class="tip-text">登录后尽享更多权益</text>
+  </view>
+</block>
+
+<block wx:else>
+
+  <!-- 头像昵称区域 -->
+  <view class="top-box">
+    <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+    <view class="nickname">{{userInfo.nickName}}</view>
+  </view>
+
+  <!-- 面板区域 -->
+  <view class="panel">
+    <view class="panel-list-item">
+      <text>联系客服</text>
+      <!-- <image src="/images/arrow.png"></image> -->
+    </view>
+
+    <view class="panel-list-item">
+      <text>设置</text>
+      <!-- <image src="/images/arrow.png"></image> -->
+    </view>
+
+    <view class="panel-list-item" bindtap="logout">
+      <text>退出登录</text>
+      <!-- <image src="/images/arrow.png"></image> -->
+    </view>
+    <button bindgetphonenumber="onGetPhoneNumber">获取手机号码</button>
+  </view>
+
+</block>
