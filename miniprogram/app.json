@@ -13,8 +13,6 @@
         "navigationBarTextStyle": "black"
     },
     "sitemapLocation": "sitemap.json",
-    "requiredUserInfo": true,
-    "style": "v2",
     "tabBar": {
         "list": [
             {
